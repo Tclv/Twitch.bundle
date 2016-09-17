@@ -10,6 +10,7 @@ TWITCH_FEATURED_STREAMS = 'https://api.twitch.tv/kraken/streams/featured'
 TWITCH_TOP_GAMES = 'https://api.twitch.tv/kraken/games/top'
 TWITCH_LIST_STREAMS = 'https://api.twitch.tv/kraken/streams'
 TWITCH_SEARCH_STREAMS = 'https://api.twitch.tv/kraken/search/streams'
+CLIENT_ID = 'gzux2tt85x9ppnnxyh7czkfiovtxtd7'
 
 PAGE_LIMIT = 100
 NAME = 'Twitch'
@@ -19,6 +20,7 @@ def Start():
 
 	ObjectContainer.title1 = NAME
 	HTTP.Headers['User-Agent'] = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.117 Safari/537.36'
+	HTTP.Headers['Client-ID'] = CLIENT_ID
 	HTTP.CacheTime = 300
 
 ####################################################################################################
